@@ -45,6 +45,14 @@ The application uses the following database tables:
 - `tags`: Stores information about tags. Columns: `tag_id` (Primary Key), `tag_name`
 - `mix_tags`: Stores the many-to-many relationship between mixes and tags. Columns: `mix_id` (Foreign Key referencing `mixes`), `tag_id` (Foreign Key referencing `tags`)
 
+## Testing
+
+You can run the tests with the following command:
+
+```bash
+ python manage.py test djmixes
+```
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
